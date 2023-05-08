@@ -1,12 +1,13 @@
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-    def is_adult(self):
-        return self.age > 18
-person1 = Person("Саша", 25)
-print(person1.is_adult())
+    def area(self):
+        return self.width * self.height
 
-person2 = Person('Олександр', 16)
-print(person2.is_adult())
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+rectangle = Rectangle(5, 3)
+print(rectangle.area())
+print(rectangle.perimeter())
