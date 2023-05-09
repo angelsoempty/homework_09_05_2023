@@ -1,13 +1,10 @@
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+    def info(self):
+        print(f"Марка: {self.brand}, Модель: {self.model}, Рік: {self.year}")
 
-    def area(self):
-        return self.width * self.height
-
-    def perimeter(self):
-        return 2 * (self.width + self.height)
-rectangle = Rectangle(5, 3)
-print(rectangle.area())
-print(rectangle.perimeter())
+car = Car('Mercedes', 'W223','2020')
+car.info()
